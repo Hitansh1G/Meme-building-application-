@@ -1,16 +1,17 @@
 package com.crio.starter.exchange;
 
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.experimental.FieldDefaults;
 
 @Data
 @AllArgsConstructor
-@EqualsAndHashCode
 @NoArgsConstructor
-public class ResponseDto {
+@FieldDefaults(level = AccessLevel.PRIVATE)
+public class MemeResponseDto {
 
-    private String message;
+    String id;
 
 }

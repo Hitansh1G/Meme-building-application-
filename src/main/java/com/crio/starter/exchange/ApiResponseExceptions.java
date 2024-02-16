@@ -1,16 +1,14 @@
 package com.crio.starter.exchange;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
-@AllArgsConstructor
-@EqualsAndHashCode
 @NoArgsConstructor
-public class ResponseDto {
-
+@AllArgsConstructor
+@Getter
+@Setter
+public class ApiResponseExceptions {
     private String message;
-
 }
